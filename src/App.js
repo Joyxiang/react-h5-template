@@ -31,7 +31,7 @@ class App extends Component {
 
   render() {
     let loading = this.state.loading
-    return loading ? <Loading /> : <Template config={mockData} />
+    return loading ? <Loading /> : <Template {...mockData} />
   }
 }
 
