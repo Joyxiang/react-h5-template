@@ -3,6 +3,7 @@ import './App.css'
 import 'normalize.css'
 import Loading from './components/common/loading'
 import Template from './components/main/template'
+import { data as mockData } from './mockdata/sample1'
 
 class App extends Component {
   constructor() {
@@ -30,7 +31,7 @@ class App extends Component {
 
   render() {
     let loading = this.state.loading
-    return loading ? <Loading /> : <Template />
+    return loading ? <Loading /> : <Template config={mockData} />
   }
 }
 

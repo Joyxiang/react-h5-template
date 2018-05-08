@@ -18,13 +18,15 @@ class Template extends Component {
   componentDidMount() {}
 
   render() {
-    const displayTheme = this.props.style.displaytheme || 'flex-mid'
-    const { allComponents } = this.props
-    return (
-      <div className={displayTheme}>
-        {allComponents.map((config, index) => this.renderComponent(config))}
-      </div>
-    )
+    console.dir(this.props)
+    const displayTheme = this.props.type || 'flex-mid'
+    const { components } = this.props
+    // return (
+    //   <div className={displayTheme}>
+    //     {allComponents.map((config, index) => this.renderComponent(config))}
+    //   </div>
+    // )
+    return null
   }
 }
 export default Template
