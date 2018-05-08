@@ -8,14 +8,12 @@ import { data as mockData } from './mockdata/sample1'
 class App extends Component {
   constructor() {
     super()
-    console.log('construct')
     this.state = {
       loading: true
     }
   }
 
   componentWillMount() {
-    console.log('component will mount')
     setTimeout(() => {
       // here to get Data
       this.setState({
@@ -26,7 +24,6 @@ class App extends Component {
 
   componentDidMount() {
     // add track here
-    console.log('component did mount')
   }
 
   render() {

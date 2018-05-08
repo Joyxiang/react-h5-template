@@ -34,7 +34,10 @@ const data = {
       style: {
         position: 'absolute',
         top: '0',
-        left: '0'
+        left: '0',
+        width: '100px',
+        height: '30px',
+        border: '1px solid white'
       },
       defaultImage: '',
       touchedImage: ''

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Loadable from 'react-loadable'
+import '../../service/wechat'
 
 const LoadableImageComponent = Loadable({
   loader: () => import('../basic/image'),
@@ -7,6 +8,13 @@ const LoadableImageComponent = Loadable({
 })
 
 const ImageComponent = context => <LoadableImageComponent {...context} />
+
+const LoadableButtonComponent = Loadable({
+  loader: () => import('../basic/button'),
+  loading: () => <div>Loading...</div>
+})
+
+const ButtonComponent = context => <LoadableButtonComponent {...context} />
 
 class Template extends Component {
   constructor() {
@@ -19,7 +27,7 @@ class Template extends Component {
       case 'Image':
         return <ImageComponent key={index} {...context} />
       case 'Button':
-        return null
+        return <ButtonComponent key={index} {...context} />
       default:
         return null
     }
