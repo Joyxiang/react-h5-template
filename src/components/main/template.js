@@ -7,14 +7,14 @@ const LoadableImageComponent = Loadable({
   loading: () => <div>Loading...</div>
 })
 
-const ImageComponent = context => <LoadableImageComponent {...context} />
-
 const LoadableButtonComponent = Loadable({
   loader: () => import('../basic/button'),
   loading: () => <div>Loading...</div>
 })
 
 const ButtonComponent = context => <LoadableButtonComponent {...context} />
+
+const ImageComponent = context => <LoadableImageComponent {...context} />
 
 class Template extends Component {
   constructor() {
