@@ -8,7 +8,7 @@ const data = {
     {
       type: 'Image',
       src:
-        'https://pbs.twimg.com/profile_images/910054438122921984/HH_0aCc-_bigger.jpg',
+        'https://h5-images.oss-cn-shanghai.aliyuncs.com/xingshidu_h5/marketing/pages/world_cup/goal/share.png',
       alt: 'text',
       style: {
         position: 'absolute',
@@ -20,7 +20,7 @@ const data = {
     {
       type: 'Image',
       src:
-        'https://pbs.twimg.com/profile_images/910054438122921984/HH_0aCc-_bigger.jpg',
+        'https://h5-images.oss-cn-shanghai.aliyuncs.com/xingshidu_h5/marketing/pages/world_cup/goal/share.png',
       alt: 'text',
       style: {
         position: 'absolute',
