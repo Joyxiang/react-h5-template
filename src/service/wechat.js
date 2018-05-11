@@ -36,7 +36,6 @@ const WechatServie = function() {
       })
     })
   }
-  console.log('wechat')
 }
 WechatServie()
 
