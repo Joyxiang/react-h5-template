@@ -12,9 +12,18 @@ const LoadableButtonComponent = Loadable({
   loading: () => <div>Loading...</div>
 })
 
+const LoadableImageFunctionalComponent = Loadable({
+  loader: () => import('../basic/imageFuctional'),
+  loading: () => <div>Loading</div>
+})
+
 const ButtonComponent = context => <LoadableButtonComponent {...context} />
 
 const ImageComponent = context => <LoadableImageComponent {...context} />
+
+const ImageFunctionalComponent = context => (
+  <LoadableImageFunctionalComponent {...context} />
+)
 
 class Template extends Component {
   constructor() {
@@ -28,6 +37,8 @@ class Template extends Component {
         return <ImageComponent key={index} {...context} />
       case 'Button':
         return <ButtonComponent key={index} {...context} />
+      case 'ImageFunctional':
+        return <ImageFunctionalComponent key={index} {...context} />
       default:
         return null
     }

@@ -2,7 +2,8 @@ const data = {
   type: 'flex-mid',
   style: {
     color: 'white',
-    backgroundImage: `url('https://h5-images.oss-cn-shanghai.aliyuncs.com/xingshidu_h5/marketing/pages/xsd51/bg.png')`
+    backgroundImage: `url('https://h5-images.oss-cn-shanghai.aliyuncs.com/xingshidu_h5/marketing/pages/xsd51/bg.png')`,
+    backgroundSize: 'cover'
   },
   components: [
     {
@@ -37,10 +38,12 @@ const data = {
         left: '0',
         width: '100px',
         height: '30px',
-        border: '1px solid white'
+        border: 'none'
       },
-      defaultImage: '',
-      touchedImage: ''
+      defaultImage:
+        'https://h5-images.oss-cn-shanghai.aliyuncs.com/xingshidu_h5/marketing/pages/world_cup/card_pr/btn-ok-1.png',
+      touchedImage:
+        'https://h5-images.oss-cn-shanghai.aliyuncs.com/xingshidu_h5/marketing/pages/world_cup/card_pr/btn-ok-2.png'
     }
   ]
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-class ComponentImage extends React.PureComponent {
+class ComponentImage extends React.Component {
   render() {
     let context = this.props
     return (
